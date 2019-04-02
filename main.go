@@ -54,8 +54,6 @@ func main() {
 	put, putErr := commandFlags.GetString("put")
 	payload, _ := commandFlags.GetString("payload")
 
-	fmt.Printf("------------- TODO REMOVE ME ---------\nKeys: %v\n", viper.AllSettings())
-
 	// Handle the special authenticate use-case
 	if authenticate {
 		performTokenExchange(gatewayAddress, clientID, psk)
